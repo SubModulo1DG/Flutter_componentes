@@ -10,8 +10,14 @@ class AppRoutes {
         icon: Icons.remove,
         name: "Listview1 Tipo 1",
         route: "Listview1",
-        screen: Listview1Screen())
+        screen: Listview1Screen()),
+    MenuOption(
+        icon: Icons.remove,
+        name: "Listview2 Tipo 2",
+        route: "Listview2",
+        screen: Listview2Screen())
   ];
+
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
     //Creamos lista Map para guardar las rutas actuales del proyecto
     //asignamos la rita ahome
