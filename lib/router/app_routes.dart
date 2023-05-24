@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttercomponentes/models/models.dart';
 import 'package:fluttercomponentes/screens/screens.dart';
+import 'package:fluttercomponentes/screens/tabview_screen.dart';
 
 class AppRoutes {
   static const initialRoute = "home";
@@ -15,7 +16,12 @@ class AppRoutes {
         icon: Icons.remove,
         name: "Listview2 Tipo 2",
         route: "Listview2",
-        screen: Listview2Screen())
+        screen: Listview2Screen()),
+    MenuOption(
+        icon: Icons.remove,
+        name: "Listview2 Tipo 2",
+        route: "tabview",
+        screen: const TabScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
