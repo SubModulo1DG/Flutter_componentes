@@ -13,7 +13,7 @@ class _TabViewState extends State<TabScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           bottom: TabBar(
@@ -47,6 +47,12 @@ class _TabViewState extends State<TabScreen> {
                   Text("Aqui se muestra el ejemplo"),
                   Text("deTabBar y TabView"),
                 ],
+              ),
+            ),
+            Center(
+              child: TextButton(
+                child: Text("Button"),
+                onPressed: () {},
               ),
             )
           ],

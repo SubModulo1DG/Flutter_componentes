@@ -19,9 +19,14 @@ class AppRoutes {
         screen: Listview2Screen()),
     MenuOption(
         icon: Icons.remove,
-        name: "Listview2 Tipo 2",
+        name: "TabBar y TabView c:",
         route: "tabview",
-        screen: const TabScreen())
+        screen: const TabScreen()),
+    MenuOption(
+        icon: Icons.remove,
+        name: "Button",
+        route: "Button",
+        screen: const ButtonScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
